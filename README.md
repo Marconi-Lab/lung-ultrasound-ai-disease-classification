@@ -28,14 +28,13 @@ lung-ultrasound-ai-disease-classification/
 ```
 
 ## Getting Started
-- Clone the Repository
-  
+1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/lung-ultrasound-ai-disease-classification.git
 cd lung-ultrasound-ai-disease-classification
 ```
 
-- Organize Your Dataset
+2. Organize Your Dataset
   > Ensure your raw LUS images are placed in the correct input folder, then run:
 
 ```bash
@@ -43,6 +42,63 @@ python sort_lus_data.py
 ```
 This will sort and structure the dataset into appropriate subfolders for training and evaluation.
 
-- Preprocess the Images
+3. Preprocess the Images
+> Use the functions in process_image.py to apply preprocessing such as:
+
+- Grayscale conversion
+- Normalization
+- Resizing
+- Noise reduction
+- Data augmentation
+
+Example Usege:
+
+```python
+from process_image import preprocess_image
+processed_img = preprocess_image("path/to/image.png")
+```
+
+4. Dependencies
+> Install required Python packages using:
+```bash
+pip install numpy opencv-python pillow scikit-learn matplotlib
+```
+
+5. Model Training (Example)
+> Here is a simple PyTorch CNN architecture you can build upon:
+```python
+import torch.nn as nn
+
+class SimpleCNN(nn.Module):
+    def __init__(self):
+        super(SimpleCNN, self).__init__()
+        self.features = nn.Sequential(
+            nn.Conv2d(1, 32, kernel_size=3, stride=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+            nn.Conv2d(32, 64, kernel_size=3, stride=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+        self.classifier = nn.Sequential(
+            nn.Linear(64 * 6 * 6, 128),
+            nn.ReLU(),
+            nn.Linear(128, 3)  # Adjust based on number of output classes
+        )
+
+    def forward(self, x):
+        x = self.features(x)
+        x = x.view(x.size(0), -1)
+        x = self.classifier(x)
+        return x
+```
+6. Evaluation
+> Evaluate your classification results using metrics like accuracy, F1-score, and confusion matrix:
+```python
+from sklearn.metrics import classification_report
+print(classification_report(y_true, y_pred, target_names=class_names))
+```
+
+
 
 
