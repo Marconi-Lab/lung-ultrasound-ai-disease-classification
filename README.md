@@ -1,6 +1,3 @@
-# Create a README.md file with the full content and save it
-readme_content = """# Lung Ultrasound Images for Automated AI-based Lung Disease Classification
-
 This repository contains code for preprocessing and sorting lung ultrasound (LUS) image datasets and building image processing pipelines for automated classification of lung diseases using AI techniques.
 
 ## 🧠 Project Overview
