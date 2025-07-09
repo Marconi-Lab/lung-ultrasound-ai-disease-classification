@@ -33,3 +33,16 @@ lung-ultrasound-ai-disease-classification/
 ```bash
 git clone https://github.com/yourusername/lung-ultrasound-ai-disease-classification.git
 cd lung-ultrasound-ai-disease-classification
+```
+
+- Organize Your Dataset
+  > Ensure your raw LUS images are placed in the correct input folder, then run:
+
+```bash
+python sort_lus_data.py
+```
+This will sort and structure the dataset into appropriate subfolders for training and evaluation.
+
+- Preprocess the Images
+
+
