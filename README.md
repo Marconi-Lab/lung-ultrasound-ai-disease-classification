@@ -2,9 +2,7 @@ This repository contains code for preprocessing and sorting lung ultrasound (LUS
 
 ## 🧠 Project Overview
 
-Lung ultrasound (LUS) is increasingly recognized as a valuable imaging modality for evaluating various pulmonary conditions. It is a radiation-free, cost-effective, and portable diagnostic tool—especially well-suited for use in low-resource and emergency settings. However, accurate interpretation of LUS scans remains challenging due to high inter-operator variability, dependence on sonographer expertise, and the inherently low signal-to-noise ratio of ultrasound images.
-
-To address these challenges, this project supports the development of AI-based diagnostic tools that can help automate and standardize LUS interpretation. It focuses on two key components:
+Lung ultrasound (LUS) is a portable, cost-effective, and radiation-free tool for diagnosing lung conditions, ideal for low-resource and emergency settings. However, its interpretation is difficult due to variability and image quality. This project develops AI-based tools to automate and standardize LUS image analysis. It focuses on two key components:
 
 - `sort_lus_data.py`: Organizes and structures raw ultrasound datasets for streamlined training and evaluation.
 - `process_image.py`: Provides image preprocessing and transformation functions to prepare input data for machine learning pipelines.
