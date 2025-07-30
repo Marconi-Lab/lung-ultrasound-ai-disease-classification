@@ -1,19 +1,19 @@
 This repository contains code for preprocessing and sorting lung ultrasound (LUS) image datasets and building image processing pipelines for automated classification of lung diseases using AI techniques.
 
-## 🧠 Project Overview
+### 🧠 Project Overview
 
 Lung ultrasound (LUS) is a portable, cost-effective, and radiation-free tool for diagnosing lung conditions, ideal for low-resource and emergency settings. However, its interpretation is difficult due to variability and image quality. This project develops AI-based tools to automate and standardize LUS image analysis. It focuses on two key components:
 
 - `sort_lus_data.py`: Organizes and structures raw ultrasound datasets for streamlined training and evaluation.
 - `process_image.py`: Provides image preprocessing and transformation functions to prepare input data for machine learning pipelines.
 
-## 🗂️ Dataset Description
+### 🗂️ Dataset Description
 
 This repository supports a curated benchmark dataset of 1,062 labelled lung ultrasound images collected in Uganda. The data were acquired from patients at **Mulago National Referral Hospital** and **Kiruddu Referral Hospital** by senior radiologists. Each image is annotated and suitable for training and evaluating deep learning models—particularly convolutional neural networks (CNNs).
 
 The dataset is intended to support the development of robust, automated deep learning systems for pulmonary disease diagnosis using LUS. It offers valuable real-world data for advancing medical AI research, especially in under-resourced clinical environments.
 
-## 📁 Repository Structure
+### 📁 Repository Structure
 
 ```bash
 lung-ultrasound-ai-disease-classification/
