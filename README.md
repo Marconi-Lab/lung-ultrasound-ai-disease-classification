@@ -22,7 +22,7 @@ lung-ultrasound-ai-disease-classification/
 ├── README.md              # Project documentation
 ```
 
-## Getting Started
+# Getting Started
 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/lung-ultrasound-ai-disease-classification.git
