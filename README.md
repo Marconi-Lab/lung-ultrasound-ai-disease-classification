@@ -38,7 +38,7 @@ lung-ultrasound-ai-disease-classification/
   This will sort and structure the dataset into appropriate subfolders for training and evaluation.
 
 3. Preprocess the Images
-  > Use the functions in process_image.py to apply preprocessing such as:
+    > Use the functions in process_image.py to apply preprocessing such as:
   
   - Grayscale conversion
   - Normalization
@@ -54,13 +54,13 @@ lung-ultrasound-ai-disease-classification/
   ```
 
 4. Dependencies
-  > Install required Python packages using:
+    > Install required Python packages using:
   ```bash
   pip install numpy opencv-python pillow scikit-learn matplotlib
   ```
 
 5. Model Training (Example)
-  > Here is a simple PyTorch CNN architecture you can build upon:
+    > Here is a simple PyTorch CNN architecture you can build upon:
   ```python
   import torch.nn as nn
   
@@ -88,7 +88,7 @@ lung-ultrasound-ai-disease-classification/
           return x
   ```
 6. Evaluation
-  > Evaluate your classification results using metrics like accuracy, F1-score, and confusion matrix:
+    > Evaluate your classification results using metrics like accuracy, F1-score, and confusion matrix:
   ```python
   from sklearn.metrics import classification_report
   print(classification_report(y_true, y_pred, target_names=class_names))
